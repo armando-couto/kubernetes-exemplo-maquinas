@@ -1,0 +1,15 @@
+
+Instalei:
+
+https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
+https://linuxconfig.org/install-virtualbox-on-ubuntu-20-04-focal-fossa-linux
+https://kubernetes.io/docs/tasks/tools/install-minikube/
+https://kubernetes.io/docs/tasks/tools/install-minikube/#confirm-installation
+
+Comandos:
+sudo kubeadm init
+sudo minikube start --driver=virtualbox
+sudo minikube status
+kubectl proxy --address='0.0.0.0' --disable-filter=true
+
+OBS: não precisei rodar o sudo minikube dashboard.
