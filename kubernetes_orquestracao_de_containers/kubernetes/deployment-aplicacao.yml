@@ -1,19 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aplicacao-deployment
+  name: aplicacao-noticia-deployment
 spec:
   selector:
     matchLabels:
-      app: aplicacao-deployment
-      version: v1
+      name: aplicacao-noticia-pod
   template:
     metadata:
       labels:
-        name: aplicacao-pod
+        name: aplicacao-noticia-pod
     spec:
       containers:
-        - name: container-aplicacao-loja
-          image: rafanercessian/aplicacao-loja:v1
+        - name: container-aplicacao
+          image: jnlucas/noticia-alura:v3
           ports:
             - containerPort: 80
