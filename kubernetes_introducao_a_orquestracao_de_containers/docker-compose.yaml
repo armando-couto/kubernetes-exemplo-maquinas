@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   db:
-    image: mysql:8.0.29
+    image: mysql:5.7.38
     environment:
       - MYSQL_DATABASE=loja
       - MYSQL_USER=root
