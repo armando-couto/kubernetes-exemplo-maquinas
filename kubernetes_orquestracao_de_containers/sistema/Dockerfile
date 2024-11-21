@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php:8.4-apache
 
 COPY php.ini-production /usr/local/etc/php/
 COPY php.ini-development /usr/local/etc/php/
